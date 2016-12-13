@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!--slide 1-->
+				<section>
+<section>
+					<p><h2> Hi </h2></p>
+				</section>
+					<section data-background-video="video.MP4" data-background-video-loop data-background-video-muted>
+					<h3>Water is everywhere, but clean drinking water is not. </h3>
+					</section>
+					<section data-background-image="image/journey.png" data-background-size="900px">
+					</section>
+				</section>
+
+<!--slide 2-->
+				<section>
+	<section>
+					<h5> 1. Testing new subscription model </h5>
+					<p>A change in the subscription model. Instead of buying 10L every morning, what if a family is guaranteed 20L of water everyday. In this model, Spring Health only refills the water that was consumed the previous day. With this monthly subscription, time is saved by eliminating unnecessary tasks, and a family of five will always have more water than they consume at home any given day.
+					</p>
+		</section>
+		<section data-background-image="images/images.021.png" data-background-size="900px">
+		</section>
+<section>
+<div id="container3" style="min-width:310px; height: 400px; width:800px; margin:0 auto"> </div>"
+</section>
+</section>
+
+<!--slide 3-->
+<section>
+<section> <h5> 2. An evening/ nighly delivery round.</h5>
+	<p> A low cost evening delivery round by cycle. What if in addition to the water received in the morning, SH provides a street hawker who makes nightly rounds to give extra water to families in need.
+	</p>
+</section>
+<section data-background-image="images/images.022.png" data-background-size="900px">
+</section>
+</section>
+<!--slide 4-->
+
+	<section>
+
+		<section>
+			<h5> 3. Testing annual subscription + product bundling</h5>
+			<p>While in Odisha, I saw that even though children drink clean water at home, they do not have access to this water in school, and not everyone carries SH water with them when they leave home. To address this, what if SH were to provide clean water at multiple community hot spots, like schools, bus stops or Kirana shops. You can access this water is you have subscribed to and received Special spring health drinking vessels.
+</p>
+</section>
+<section data-background-image="images/images.023.png" data-background-size="900px">
+</section>
+		<section>
+			<div id="container2" style="min-width: 400px; height: 500px; width: 800px; margin: 0 auto"></div>
+		</section>
+	</section>
+
+<!--slide 5-->
+<section>
+<section> <h5>4. People take pride in drinking clean water </h5>
+	<p>People look to their neighbors for inspiration, tips and tricks around everything. In Odisha, I noticed that families paint the walls outside their home with celebrations of marriage and welcome signs. What if I were to recognize these outspoken families and paint a Spring Health pattern or a mural on their wall to signify their loyalty towards clean water, so that they can take pride in their actions and motivate others to do the same.
+	</p>
+</section>
+<section data-background-image="images/images.024.png" data-background-size="900px">
+</section>
+</section>
+
+<!--slide 6-->
+	<section>
+		<section> <h5> 5. Finding the positive deviants</h5>
+			<p>There are Self Help Groups of women in every village. These women are highly respected within their community and are also part of a larger network that connects these women to others like them from different villages. They are independent, entrepreneurial and community driven. What if we were to use their network and influence so that they became Spring Health saleswomen and advocates of clean water.
+			</p>
+</section>
+<section data-background-image="images/images.025.png" data-background-size="900px">
+
+</section>
+<section>
+	<div id="container" style="min-width: 620px; height: 500px; max-width: 800px; margin: 0 auto"></div>
+
+</section>
+	</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<script>
+	$(function () {
+
+    $(document).ready(function () {
+
+        Highcharts.chart('container', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Customer alternatives to not having clean water at home'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'In times of water shortage at home',
+                colorByPoint: true,
+                data: [{
+                    name: 'Got more from my neighbors',
+                    color:'#1B8E88',
+                    y: 12
+                }, {
+                    name: 'Drank underground water',
+										color: '#4D5259',
+                    y: 27,
+
+                }, {
+                    name: 'Complain to customer services, then drank underground water',
+                    color: '#4D5259',
+                    y: 21
+                }, {
+                    name: 'I have never run out of water',
+                    color: '#6DA09F',
+                    y: 18
+                }, ]
+            }]
+        });
+    });
+});
+	</script>
+	<script>
+	$(function () {
+    Highcharts.chart('container2', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Family distribution chart'
+        },
+        xAxis: {
+            categories: ['1person', '2person', '3person', '4person', '5person', '6person', '7person','8person','9person','10person','11person','12person']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total number of people'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: 10,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor:'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color:  'white'
+                }
+            }
+        },
+        series: [{
+            name: 'Kids',
+            color: '#553343',
+            data: [0,1,4,26,20,13,8,5,13,3,7,5]
+        }, {
+            name: 'Adults',
+            color: '#DAD6CA',
+            data: [1,3,4,74,95,29,30,11,23,7,15,7]
+        }]
+    });
+});
+</script>
+<script>
+$(function () {
+    Highcharts.chart('container3', {
+        chart: {
+            type: 'scatter',
+            zoomType: 'xy'
+        },
+        title: {
+            text: 'Deliver time versus amount of water fallen short'
+        },
+        subtitle: {
+            text: 'Gopalpur and Harirajpur'
+        },
+        xAxis: {
+					min:6,
+					max:12,
+					tickInterval:1,
+            title: {
+                enabled: true,
+                text: 'Delivery time'
+            },
+            startOnTick: true,
+            endOnTick: true,
+            showLastLabel: true
+        },
+        yAxis: {
+        min:0,
+        max:10,
+        tickInterval:1,
+            title: {
+                text: 'Liters fallen short'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 650,
+            y: 70,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+            borderWidth: 1
+        },
+        plotOptions: {
+            scatter: {
+                marker: {
+                    radius: 5,
+                    states: {
+                        hover: {
+                            enabled: true,
+                            lineColor: 'rgb(100,100,100)'
+                        }
+                    }
+                },
+                states: {
+                    hover: {
+                        marker: {
+                            enabled: false
+                        }
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.y} L,{point.x} AM '
+                }
+            }
+        },
+        series: [{
+            name: 'Gopalpur',
+           color: '#553343',
+            data: [
+
+               [10.30,2],[10.30,5],[10.30,0],[7,5],[7.30,10],[7.30,7], [7,4], [7,4], [7.35,3],[8,3], [7.30,5], [7,10], [7,0], [8,0], [7.25,3], [7.20,4], [7.30,5], [8,2], [10.25,0], [10.20,4], [7.35,5], [7.40,3], [8,2], [7,4], [7.30,5], [7,5], [7.15,5], [8,5], [10,5], [10.30,4], [7.30,10], [9.30,10], [7,4], [10,0], [10,0], [10,1], [8,5], [10,6]
+
+                ]
+
+        },
+        {
+            name: 'Harirajpur',
+            color: '#1AAFCD',
+            data: [
+          [7.30,1], [8,2], [9,6], [8.30,5], [7,1], [10,1], [9,2], [10,5], [9,4], [9,5], [9,5], [8,1], [8,2], [8,3], [11.15,5], [11,0], [8,0], [10.10,4], [10.15,0], [10.20,1], [10.30,6], [9,2], [10,2], [10,4], [10.15,4], [10.20,4]
+            ]
+        }
+        ]
+    });
+});
+</script>
+	</body>
+</html>
+<!--Thanks to Aurelia(auremoser), Highcarts and Hakimel for reveal.js-->
